@@ -1,0 +1,672 @@
+        <div class="clearfix"></div>
+
+        <!-- Content -->
+        <section class="home">
+            <div class="container">
+                <div class="home-container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="home-content-info">
+                                <h1 class="home-title">PHP Hosting</h1>
+                                <h2 class="home-subtitle">Cepat, handal, penuh dengan<br> modul PHP yang Anda butuhkan</h2>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <h6 class="checklist">
+                                            <i class="fa fa-check-circle green padding-right-10"></i>
+                                            Solusi PHP untuk performa query yang lebih cepat.
+                                        </h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="checklist">
+                                            <i class="fa fa-check-circle green padding-right-10"></i>
+                                            Konsumsi memori yang lebih rendah.
+                                        </h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="checklist">
+                                            <i class="fa fa-check-circle green padding-right-10"></i>
+                                            Support PHP 5.3, PHP 5.4, PHP 5.5, PHP 5.6, PHP 7
+                                        </h6>
+                                    </li>
+                                    <li>
+                                        <h6 class="checklist">
+                                            <i class="fa fa-check-circle green padding-right-10 "></i>
+                                            Fitur enkripsi IonCube dan Zen Guard Loaders
+                                        </h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="home-content-image">
+                                <img src="assets/images/php7.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="container">
+                <div class="features-container">
+                    <div class="row">
+                        <div style="margin: 0 auto; width: 80%; height: 350px;">
+                            <div class="vbottom col-lg-4 col-md-4 col-sm-4">
+                                <div class="features-content">
+                                    <div class="features-icon">
+                                        <img src="assets/images/zendguard.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="features-content">
+                                        <h5 class="m-light">PHP Zend Guard Loader</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vbottom col-lg-4 col-md-4 col-sm-4">
+                                <div class="features-content">
+                                    <div class="features-icon">
+                                        <img src="assets/images/composer.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="features-content">
+                                        <h5 class="m-light">PHP Composer</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vbottom col-lg-4 col-md-4 col-sm-4">
+                                <div class="features-content">
+                                    <div class="features-icon">
+                                        <img src="assets/images/ioncube.png" alt="" class="img-responsive">
+                                    </div>
+                                    <div class="features-content">
+                                        <h5 class="m-light">PHP IonCube Loader</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="title-pricing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <h2 class="m-bold">Paket Hosting Singapura yang Tepat</h2>
+                        <h2 class="m-light second-pricing-title">Diskon 40% + Domain dan SSL Gratis untuk Anda</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hosting-pricing">
+            <div class="container">
+                <div class="container-wrapper">
+                    <div class="pricelist-table">
+                        <div class="pricelist-table-wrapper">
+                            <div class="pricelist-wrapper">
+                                <div class="pricelist-col">
+                                    <div class="title">
+                                        {{paket[0].name}}
+                                    </div>
+                                    <div class="price">
+                                        <div class="old-price strike-black"><sup class="rp">Rp</sup> {{paket[0].norm_price|number_format(0, ',', '.')}}</div>
+                                        {% if paket[0].disc_price|length is odd %}
+                                        {% set first_number = paket[0].disc_price|slice(0,2) %}
+                                        {% set last_number  = paket[0].disc_price|slice(2, paket[0].disc_price|length) %}
+                                        {% else %}
+                                        {% set first_number = paket[0].disc_price|slice(0,3) %}
+                                        {% set last_number  = paket[0].disc_price|slice(3, paket[0].disc_price|length) %}
+                                        {% endif %}
+                                        <div class="new-price"> <sup><span>Rp</span></sup> <span>{{ first_number }}</span><sup>. {{ last_number }}/ <span>bln</span></sup></div>
+                                    </div>
+                                    <div class="resource r-normal">
+                                        <b>{{paket[0].registered|number_format(0, ',', '.')}}</b> Pengguna Terdaftar
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <ul class="r-normal">
+                                            <li><b>0.5X RESOURCE POWER</b></li>
+                                            <li><b>500 MB</b> Disk Space</li>
+                                            <li><b>Unlimited</b> Bandwidth</li>
+                                            <li><b>Unlimited</b> Database</li>
+                                            <li><b>1</b> Domain</li>
+                                            <li><b>Instant</b> Backup</li>
+                                            <li><b>Unlimited SSL</b> Gratis Selamanya </li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-depth-container">
+                                        <a href="" class="btn-paket btn-white-black">
+                                        Pilih Sekarang
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricelist-wrapper">
+                                <div class="pricelist-col">
+                                    <div class="title">
+                                        {{paket[1].name}}
+                                    </div>
+                                    <div class="price">
+                                        <div class="old-price strike-black"><sup class="rp">Rp</sup> {{paket[1].norm_price|number_format(0, ',', '.')}}</div>
+                                        {% if paket[1].disc_price|length is odd %}
+                                        {% set first_number = paket[1].disc_price|slice(0,2) %}
+                                        {% set last_number  = paket[1].disc_price|slice(2, paket[1].disc_price|length) %}
+                                        {% else %}
+                                        {% set first_number = paket[1].disc_price|slice(0,3) %}
+                                        {% set last_number  = paket[1].disc_price|slice(3, paket[1].disc_price|length) %}
+                                        {% endif %}
+                                        <div class="new-price"> <sup><span>Rp</span></sup> <span>{{ first_number }}</span><sup>. {{ last_number }}/ <span>bln</span></sup></div>
+                                    </div>
+                                    <div class="resource r-normal">
+                                        <b>{{paket[1].registered|number_format(0, ',', '.')}}</b> Pengguna Terdaftar
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <ul class="r-normal">
+                                            <li><b>1X RESOURCE POWER</b></li>
+                                            <li><b>Unlimited</b> Disk Space</li>
+                                            <li><b>Unlimited</b> Bandwidth</li>
+                                            <li><b>Unlimited</b> POP3 Email</li>
+                                            <li><b>Unlimited</b> Databases</li>
+                                            <li><b>10</b> Addon Domains</li>
+                                            <li><b>Instant</b> Backup</li>
+                                            <li><b>Domain Gratis</b> Selamanya</li>
+                                            <li><b>Unlimited SSL</b>Gratis Selamanya </li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-depth-container">
+                                        <a href="#" class="btn-paket btn-white-black">
+                                        Pilih Sekarang                        
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricelist-wrapper pricelist-highlight">
+                                <div class="pricelist-col" style="border: 1px solid #298eea;">
+                                    <div class="title" style="background-color:#298eea!important;color:#fff !important;border:none !important;">
+                                        {{paket[2].name}}
+                                    </div>
+                                    <div class="price" style="background-color:#298eea;border:none !important;">
+                                        <div class="old-price strike-white" style="color:#fff !important;"><sup class="rp">Rp</sup> {{paket[2].norm_price|number_format(0, ',', '.')}}</div>
+                                        {% if paket[2].disc_price|length is odd %}
+                                        {% set first_number = paket[2].disc_price|slice(0,2) %}
+                                        {% set last_number  = paket[2].disc_price|slice(2, paket[2].disc_price|length) %}
+                                        {% else %}
+                                        {% set first_number = paket[2].disc_price|slice(0,3) %}
+                                        {% set last_number  = paket[2].disc_price|slice(3, paket[2].disc_price|length) %}
+                                        {% endif %}
+                                        <div class="new-price" style="color:#fff !important;">
+                                            <sup>
+                                            <span>Rp</span>
+                                            </sup> 
+                                            <span>
+                                            {{ first_number }}
+                                            </span>
+                                            <sup>
+                                            {{ last_number }}/ <span>bln</span>
+                                            </sup>
+                                        </div>
+                                    </div>
+                                    <div class="resource r-normal" style="background-color:#177eda;color:#fff !important;">
+                                        <b>{{paket[2].registered|number_format(0, ',', '.')}}</b> Pengguna Terdaftar
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <ul class="r-normal">
+                                            <li><b>2X RESOURCE POWER</b></li>
+                                            <li><b>Unlimited</b> Disk Space</li>
+                                            <li><b>Unlimited</b> Bandwidth</li>
+                                            <li><b>Unlimited</b> POP3 Email</li>
+                                            <li><b>Unlimited</b> Databases</li>
+                                            <li><b>Unlimited</b> Addon Domains</li>
+                                            <li><b>Instant</b> Backup</li>
+                                            <li><b>Domain Gratis</b> Selamanya</li>
+                                            <li><b>Unlimited SSL</b> Gratis Selamanya</li>
+                                            <li><b>Private</b> Name Server</li>
+                                            <li><b>SpamAssasin</b> Mail Protection</li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-depth-container">
+                                        <a href="#" class="btn-paket-highlight btn-blue-white">
+                                        Pilih Sekarang
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricelist-wrapper">
+                                <div class="pricelist-col">
+                                    <div class="title">
+                                        {{paket[3].name}}
+                                    </div>
+                                    <div class="price">
+                                        <div class="old-price strike-black"><sup class="rp">Rp</sup> {{paket[3].norm_price|number_format(0, ',', '.')}}</div>
+                                        {% if paket[3].disc_price|length is odd %}
+                                        {% set first_number = paket[3].disc_price|slice(0,2) %}
+                                        {% set last_number  = paket[3].disc_price|slice(2, paket[3].disc_price|length) %}
+                                        {% else %}
+                                        {% set first_number = paket[3].disc_price|slice(0,3) %}
+                                        {% set last_number  = paket[3].disc_price|slice(3, paket[3].disc_price|length) %}
+                                        {% endif %}
+                                        <div class="new-price"> <sup><span>Rp</span></sup> <span>{{ first_number }}</span><sup>. {{ last_number }}/ <span>bln</span></sup></div>
+                                    </div>
+                                    <div class="resource r-normal">
+                                        <b>{{paket[3].registered|number_format(0, ',', '.')}}</b> Pengguna Terdaftar
+                                    </div>
+                                    <div class="content-wrapper">
+                                        <ul class="r-normal">
+                                            <li><b>3X RESOURCE POWER</b></li>
+                                            <li><b>Unlimited</b> Disk Space</li>
+                                            <li><b>Unlimited</b> Bandwidth</li>
+                                            <li><b>Unlimited</b> POP3 Email</li>
+                                            <li><b>Unlimited</b> Databases</li>
+                                            <li><b>Unlimited</b> Addon Domains</li>
+                                            <li><b>Magic</b> Auto Backup &amp; Restore</li>
+                                            <li><b>Domain Gratis</b> Selamanya</li>
+                                            <li><b>Unlimited SSL</b> Gratis Selamanya</li>
+                                            <li><b>Private</b> Name Server</li>
+                                            <li><b>Prioritas</b> Layanan Support</li>
+                                            <li><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i> </li>
+                                            <li><b>SpamExpert Pro</b> Mail Protection </li>
+                                        </ul>
+                                    </div>
+                                    <div class="button-depth-container">
+                                        <a href="" class="btn-paket btn-white-black">
+                                        {% set norm  = paket[3].norm_price|trim %}
+                                        {% set disc  = paket[3].disc_price|trim %}
+                                        {% set val   = norm-disc|trim %}
+                                        {% set total = (val/norm) * 100|trim %}
+                                        Diskon {{ total|number_format(0) }}%                        
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-package">
+            <div class="container">
+                <div class="features-package-container">
+                    <div class="row">
+                        <div class="features-package-content">
+                            <div class="features-package-content-title">
+                                <h2 class="m-light">Powerful dengan Limit PHP yang lebih besar</h2>
+                            </div>
+                            <div class="col-lg-6 r-normal mt-3">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i>max execution time 300s</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active"><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i>max execution time 300s</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i>php memory limit 1024 MB</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-lg-6 r-normal mt-3">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i> post max size 128 MB</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active"><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i> upload max filesize 128 MB</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-check-circle green" style="float: left; padding-left: 20px"></i> max input vars 2500</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="features-package">
+            <div class="container">
+                <div class="features-title">
+                    <h2 class="m-light">Semua Paket Hosting Sudah Termasuk</h2>
+                </div>
+                <div class="f-container ">
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/php-version.svg" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">PHP Semua Versi</h4>
+                                    <p class="r-normal">Pilih mulai dari versi PHP 5.3 s/d PHP 7.<br>Ubah sesuka Anda!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/mysql.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">MySQL Versi 5.6</h4>
+                                    <p class="r-normal">Nikmati MySQL versi terbaru, tercepat dan<br>kaya akan fitur.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/cpanel.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">Panel Hosting cPanel</h4>
+                                    <p class="r-normal">Kelola website dengan panel canggih yang familiar di hati Anda.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/guarantee.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">Garansi Uptime 99.9%</h4>
+                                    <p class="r-normal">Data center yang mendukung kelangsungan website Anda 24/7.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/innodb.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">Database InnoDB Unlimited</h4>
+                                    <p class="r-normal">Jumlah dan ukuran database yang tumbuh<br>sesuai kebutuhan Anda.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <div class="f-content">
+                                <div class="ff-icon">
+                                    <img src="assets/images/mysql-remote.png" alt="" class="img-responsive">
+                                </div>
+                                <div class="ff-content">
+                                    <h4 class="m-bold">Wildcard Remote MySQL</h4>
+                                    <p class="r-normal">Mendukung s/d 25 max_user_connections dan 100 max_connections.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="customer-support divider-bottom-line">
+            <div class="container">
+                <div class="features-title">
+                    <h2 class="m-light">Mendukung Penuh Framework Laravel</h2>
+                </div>
+                <div class="row">
+                    <div class="customer-support-wrapper">
+                        <div class="col-md-6">
+                            <div class="customer-support-title">
+                                <p class="m-hair mt-3" style="font-size: 16px; color: gray; font-weight: 400">Tak perlu menggunakan dedicated server ataupun VPS<br> yang mahal. Layanan PHP hosting murah kami<br>mendukung penuh framework favorit Anda</p>
+
+                                <p class="mt-3">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <h6 class="checklist r-light ">
+                                                <i class="fa fa-check-circle green padding-right-10"></i>
+                                                Install Laravel 1 <b>klik</b> dengan Softaculous Installer.
+                                            </h6>
+                                        </li>
+                                        <li>
+                                            <h6 class="checklist r-light ">
+                                                <i class="fa fa-check-circle green padding-right-10"></i>
+                                                Mendukung ekstensi <b>PHP MCrypt, phar, mbstring, json,</b>dan <b>fileinfo</b>.
+                                            </h6>
+                                        </li>
+                                        <li>
+                                            <h6 class="checklist r-light ">
+                                                <i class="fa fa-check-circle green padding-right-10"></i>
+                                                Tersedia <b>Composer</b> dan <b>SSH</b> untuk menginstall packages pilihan Anda.
+                                            </h6>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p class="r-light mt-3" style="font-size: 11px;">
+                                    Nb. Composer dan SSH hanya tersedia pada paket Personal dan Bisnis.
+                                </p>
+                                <a class="mt-3 btn-pilih-hosting btn-pilih-hosting-lg btn-pilih-hosting-blue" href="#">Pilih Hosting Anda</a>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="customer-support-image">
+                                <img src="assets/images/laravel.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features-package">
+            <div class="container">
+                <div class="features-package-container">
+                    <div class="row">
+                        <div class="features-package-content" style="width: 100% !important;">
+                            <div class="features-package-content-title">
+                                <h2 class="m-light mt-5"  style="font-size: 28px;">Modul Lengkap untuk Menjalankan Aplikasi PHP Anda.</h2>
+                            </div>
+                            <div class="modul-list col-lg-3 r-normal mt-5">
+                                <table>
+                                    <tr>
+                                        <td>IcePHP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ares</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcmath</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcompiler</td>
+                                    </tr>
+                                    <tr>
+                                        <td>big_int</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bitset</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bz2_filter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clamav</td>
+                                    </tr>
+                                    <tr>
+                                        <td>coint_acceptor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dba</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modul-list col-lg-3 r-normal mt-5">
+                                <table>
+                                    <tr>
+                                        <td>IcePHP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ares</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcmath</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcompiler</td>
+                                    </tr>
+                                    <tr>
+                                        <td>big_int</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bitset</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bz2_filter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clamav</td>
+                                    </tr>
+                                    <tr>
+                                        <td>coint_acceptor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dba</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modul-list col-lg-3 r-normal mt-5">
+                                <table>
+                                    <tr>
+                                        <td>IcePHP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ares</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcmath</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcompiler</td>
+                                    </tr>
+                                    <tr>
+                                        <td>big_int</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bitset</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bz2_filter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clamav</td>
+                                    </tr>
+                                    <tr>
+                                        <td>coint_acceptor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dba</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modul-list col-lg-3 r-normal mt-5">
+                                <table>
+                                    <tr>
+                                        <td>IcePHP</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apc</td>
+                                    </tr>
+                                    <tr>
+                                        <td>apm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ares</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcmath</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bcompiler</td>
+                                    </tr>
+                                    <tr>
+                                        <td>big_int</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bitset</td>
+                                    </tr>
+                                    <tr>
+                                        <td>bz2_filter</td>
+                                    </tr>
+                                    <tr>
+                                        <td>clamav</td>
+                                    </tr>
+                                    <tr>
+                                        <td>coint_acceptor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>crack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>dba</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-xs-12 mt-3" style="text-align: center;">
+                    <a href=""><button class="btn-paket btn-white-black">Selengkapnya</button></a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="customer-support">
+            <div class="container">
+                <div class="row">
+                    <div class="customer-support-wrapper">
+                        <div class="col-md-6">
+                            <div class="customer-support-title">
+                                <h2 class="m-light">Linux Hosting yang Stabil<br>dengan Teknologi LVE</h2>
+                                <p class="r-light mt-3">
+                                    SuperMicro <strong>Intel Xeon 24-Cores</strong> server dengan RA <strong>128 GB</strong> dan<br> teknologi <strong>LVE CloudLinux</strong> untuk stabilitas server Anda. Dilengkapi<br> dengan <strong>SSD</strong> untuk kecepatan <strong>MySQL</strong> dan caching. Apache load balancer<br> berbasis LiteSpeed Technologies, <strong>CageFS</strong> security, <strong>Raid-10</strong> protection<br> dan auto backup untuk keamanan website PHP Anda.
+                                </p>
+                                <a class="mt-3 btn-pilih-hosting btn-pilih-hosting-lg btn-pilih-hosting-blue" href="#">Pilih Hosting Anda</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="customer-support-image">
+                                <img src="assets/images/support.png" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

@@ -521,12 +521,6 @@ output {
   bottom: 0;
 }
 
-.img-responsive {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 .btn-pilih-hosting {
   display: inline-block;
   margin-bottom: 0;
@@ -1360,4 +1354,217 @@ sup {
 .modul-list{
   text-align: left;
   padding-left: 100px;
+}
+
+.navbar-toggle .icon-bar {
+  border: 1px solid gray !important;
+}
+.navbar-toggle:hover {
+  background-color: gray;
+}
+.navbar-toggle .icon-bar {
+  border: 1px solid black !important;
+}
+#mobileNav li {
+  border-left: 0px !important;
+  margin: 10px 0px !important;
+}
+.navbar-toggle{
+  margin-top:40px;
+}
+
+.features3{
+  margin: 0 auto;
+  width: 80%;
+  height: 350px;
+}
+
+/*SCREEN*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  .vbottom{
+    transform: none !important;
+  }
+  .features3{
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .pricelist-table .pricelist-wrapper {
+    display: inline;
+  }
+  .features-package-content {
+    height: auto;
+  }
+  .customer-support-image{
+    height: 200px;
+  }
+  .bantuan {
+    height: 100%;
+  }
+  .bantuan .left-border-ss {
+    border-left: none;
+    padding: 0;
+  }
+  .copyright_info .float-right {
+    float: none;
+  }
+  .footer .footer-menu {
+    margin-left: 0px;
+  }
+  .footer .footer-tutorial {
+    margin-left: 0px;
+  }
+  .modul-list {
+    padding-left: 10px !important;
+  }
+  .modul-list td {
+    word-wrap: break-word;
+    font-size: 12px;
+  }
+  .bagikan {
+    height: 100px;
+  }
+  ul.logo-bank li {
+    width: 20%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+  /*.vbottom{
+    transform: none !important;
+  }
+  .features3{
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .pricelist-table .pricelist-wrapper {
+    display: inline;
+  }
+  .features-package-content {
+    height: auto;
+  }
+  .customer-support-image{
+    /*height: 450px;*/
+/*  }
+  .customer-support-title {
+    margin-bottom: 70px;
+  }*/
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+  .vbottom{
+    transform: none !important;
+  }
+  .features3{
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .pricelist-table .pricelist-wrapper {
+    display: inline;
+  }
+  .features-package-content {
+    height: auto;
+  }
+  .customer-support-image{
+    height: 200px;
+  }
+  .footer .footer-menu {
+    margin-left: 0px;
+  }
+  .footer .footer-tutorial {
+    margin-left: 0px;
+  }
+  .copyright_info .float-right {
+    float: none;
+  }
+  .footer .footer-menu {
+    margin-left: 0px;
+  }
+  .footer .footer-tutorial {
+    margin-left: 0px;
+  }
+  .modul-list {
+    padding-left: 10px !important;
+  }
+  .bagikan {
+    height: 100px;
+  }
+  .customer-support-title {
+    margin-bottom: 80px;
+  }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  .vbottom{
+    transform: none !important;
+  }
+  .features3{
+    margin-top: 20px;
+    height: auto !important;
+  }
+  .features-package-content {
+    height: auto;
+  }
+  .bantuan {
+    height: 100%;
+  }
+  .bantuan .left-border-ss {
+    border-left: none;
+    padding: 0;
+  }
+  .copyright_info .float-right {
+    float: none;
+  }
+  .footer .footer-menu {
+    margin-left: 0px;
+  }
+  .footer .footer-tutorial {
+    margin-left: 0px;
+  }
+  .customer-support-title {
+    margin-bottom: 80px;
+  }
+  .bagikan .bagikan-title {
+    font-size: 13px !important;
+    line-height: 10px !important;
+  }
+  .sup-sec-img{
+    position: relative;
+    height: 270px !important;
+  }
+  .modul-list {
+    padding-left: 50px !important;
+  }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
 }

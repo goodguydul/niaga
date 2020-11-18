@@ -60,8 +60,3 @@ services:
       - MYSQL_ROOT_PASSWORD=passboxbilling
     depends_on:
       - db
-
-# networks:
-#   default: 
-#     external:
-#       name: default

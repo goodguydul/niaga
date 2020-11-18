@@ -34,15 +34,15 @@ You can change pricelist data on index.php
 
 ## BOXBILLING & LANDING PAGE DOCKER
 
-- For deploying only BoxBilling, rename `docker-compose-boxbilling-only.yml` to `docker-compose.yml`
+- For deploying only BoxBilling, rename `docker-compose-boxbilling-only.yml` to `docker-compose.yml`.
 
-- For deploying both of BoxBilling and Landing Page, rename `docker-compose-boxbilling-landingpage.yml` to `docker-compose.yml` in 1 web service. 
+- For deploying both of BoxBilling and Landing Page, rename `docker-compose-boxbilling-landingpage.yml` to `docker-compose.yml`. 
 
 - The url is `http://localhost:8004` for BoxBilling, and `http://localhost:8004/landingpage` for Landing Page.
 
 ---
 
-- Or if you want to make BoxBilling and Landing Page on separated service, you can use `docker-compose-boxbilling-landing-page-separated-service.yml` and rename to `dokcer-compose.yml`. So the url is `http://localhost:8004` for BoxBilling, and `http://localhost:8005/` for Landing Page.
+- Or if you want to make BoxBilling and Landing Page deployed on separated service, you can use `docker-compose-boxbilling-landing-page-separated-service.yml` and rename to `dokcer-compose.yml`. So the url is `http://localhost:8004` for BoxBilling, and `http://localhost:8005/` for Landing Page.
 
 - For deployment, you can use this command on your console.:
 

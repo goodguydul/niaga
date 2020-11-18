@@ -4,32 +4,32 @@
 
 @font-face {
   font-family: Montserrat-Light;
-  src: url("/landing-page/assets/css/fonts/montserrat/Montserrat-Light.otf") format("opentype");
+  src: url("/assets/css/fonts/montserrat/Montserrat-Light.otf") format("opentype");
 }
 
 @font-face {
   font-family: Montserrat-Bold;
-  src: url("/landing-page/assets/css/fonts/montserrat/Montserrat-Bold.otf") format("opentype");
+  src: url("/assets/css/fonts/montserrat/Montserrat-Bold.otf") format("opentype");
 }
 
 @font-face {
   font-family: Montserrat-Hairline;
-  src: url("/landing-page/assets/css/fonts/montserrat/Montserrat-Hairline.otf") format("opentype");
+  src: url("/assets/css/fonts/montserrat/Montserrat-Hairline.otf") format("opentype");
 }
 
 @font-face {
   font-family: Roboto-Lights;
-  src: url("/landing-page/assets/css/fonts/roboto/Roboto-Light.ttf") format("truetype");
+  src: url("/assets/css/fonts/roboto/Roboto-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Roboto-Bold;
-  src: url("/landing-page/assets/css/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+  src: url("/assets/css/fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: Roboto-Normal;
-  src: url("/landing-page/assets/css/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+  src: url("/assets/css/fonts/roboto/Roboto-Regular.ttf") format("truetype");
 }
 
 body {
@@ -1416,7 +1416,7 @@ and (max-width : 480px) {
     height: auto;
   }
   .customer-support-image{
-    height: 200px;
+    height: 230px;
   }
   .bantuan {
     height: 100%;
@@ -1471,27 +1471,13 @@ and (max-width : 767px)
     position: relative;
     top: 100%;
     transform: none;
-}
-  /*.vbottom{
-    transform: none !important;
-  }
-  .features3{
-    margin-top: 20px;
-    height: auto !important;
-  }
-  .pricelist-table .pricelist-wrapper {
-    display: inline;
-  }
-  .features-package-content {
-    height: auto;
   }
   .customer-support-image{
-    /*height: 450px;*/
-/*  }
-  .customer-support-title {
-    margin-bottom: 70px;
-  }*/
-
+    height: 350px;
+  }
+  .bantuan {
+    height: 100%;
+   }
 }
 
 /* Smartphones (portrait) ----------- */

@@ -4,9 +4,9 @@ services:
   web:
     build:
       context: .
-      dockerfile: ./boxbilling
+      dockerfile: ./Dockerfile
     image: christexe/php:7.4-fpm-alpine
-    container_name: boxbilling
+    container_name: boxbilling_landingpage
     restart: unless-stopped
     tty: true
     environment:

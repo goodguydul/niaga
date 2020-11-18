@@ -4,7 +4,7 @@ services:
   web:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./boxbilling-dockerfile
     image: christexe/php:7.4-fpm-alpine
     container_name: boxbilling_landingpage
     restart: unless-stopped
